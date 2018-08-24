@@ -4,22 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>Document</title>
 </head>
 <body>
 
     <!-- Top bar -->
+<div class="blue-line">
 
+</div>
 <div class="top-bar">
     <div class="container">
-        <div class="row">
+        <div class="top-nav row">
             <div class="col-sm-6">
                 <ul>
-                    <li><a href="">My Wishlist</a></li>
-                    <li><a href="">My Account</a></li>
-                    <li><a href="">Shopping Cart</a></li>
-                    <li><a href="">Checkout</a></li>
+                    <li><a href=""><i class="fas fa-edit"></i> My Wishlist</a></li>
+                    <li><a href=""><i class="fas fa-user-alt"></i> My Account</a></li>
+                    <li><a href=""><i class="fas fa-shopping-cart"></i> Shopping Cart</a></li>
+                    <li><a href=""><i class="fas fa-check"></i> Checkout</a></li>
                 </ul>
             </div>
             <div class="col-sm-6">
@@ -34,19 +41,19 @@
     <!-- Nav-bar -->
 
 <div class="container">
-    <div class="row">
+    <div class="logo-nav row">
         <div class="col-sm-6">
-            <img src="http://www.placehold.it/300x200" alt="logo">
+            <img src="img/logo.jpg" alt="logo">
         </div>
         <div class="col-sm-6">
             <ul>
-                <li><a href="#">us</a></li>
-                <li><a href="#">asdf</a></li>
-                <li><a href="#">asdf</a></li>
+                <li><a href="#">US Dollar</a></li>
+                <li><a href="#"><img src="img/flags.png" alt=""> English</a></li>
+                <li><a href="#" class="cart"><i class="fas fa-shopping-cart"></i> 0 item(s) - $0.00</a></li>
             </ul>
         </div>
     </div>
-    <div class="row">
+    <div class="main-nav row">
         <div class="col-sm-8">
             <ul>
                 <li><a href="#">FASHION</a></li>
@@ -60,7 +67,7 @@
         <div class="col-sm-4">
             <form action="">
                 <input type="text" placeholder="Search here...">
-                <button type="submit">⌕</button>
+                <button type="submit"><i class="fas fa-search"></i></button>
             </form>
         </div>
     </div>
@@ -72,15 +79,32 @@
 
 <div class="carousel-wrapper">
     <div class="container">
-        <div class="row">
-            <div class="col-sm-12">
-                <img src="http://www.placehold.it/1200x700" alt="Carousel">
-
-                <h1>NEW</h1>
-                <h2>Men Collection</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia autem iste, voluptatem voluptas omnis id non expedita, dolorem, numquam recusandae odio! Repudiandae, totam illum! Vero consequatur praesentium numquam dolorum suscipit?</p>
-                <a href="#">SHOP NOW</a>
+        <div id="myCarousel" class="hero carousel slide" data-ride="carousel">
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>   
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="img/hero1.png" alt="First Slide">
+                </div>
+                <div class="item">
+                    <img src="img/hero2.png" alt="Second Slide">
+                </div>
+                <div class="item">
+                    <img src="img/hero3.png" alt="Third Slide">
+                </div>
             </div>
+            <!-- Carousel controls -->
+            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
         </div>
     </div>
 </div>
@@ -112,9 +136,10 @@
     <!-- Promo images controller -->
 
 <div class="container">
-    <div class="row">
-        <div class="col-sm-8">
+    <div class="latest row">
+        <div class="col-sm-4">
             <h2>Latest</h2>
+            <hr>
             <p>Buy discounted items from the latest collections of world brands.</p>
         </div>
         <div class="col-sm-4">

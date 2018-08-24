@@ -1,0 +1,109 @@
+/* top nav */
+
+.blue-line {
+    height: 2px;
+    background-color: #0aa8ad;
+}
+.top-bar {
+    background-color: #f5f5f5
+}
+.top-nav {
+    text-align: left;
+    color: #bdbdbd;
+}
+.top-nav li {
+    display: inline;
+    list-style: none;
+    margin-right: 20px;
+}
+.top-nav li a {
+    color: #bdbdbd;
+}
+.top-nav ul {
+    padding-left: 0;
+    padding-top: 8px;
+}
+.top-nav p {
+    text-align: right;
+    padding-top: 8px;
+}
+
+/* top nav end */
+
+/* nav bar */
+
+/* logo nav */
+
+.logo-nav {
+    height: 100px;
+}
+.logo-nav img {
+    margin-top: 22px;
+}
+.logo-nav ul {
+    margin-top: 60px;
+    text-align: right;
+}
+.logo-nav li {
+    display: inline;
+}
+.logo-nav a {
+    background-color: #e6e6e6;
+    padding: 10px;
+}
+.logo-nav a:hover {
+    text-decoration: none;
+}
+.logo-nav a img {
+    margin-top: 0;
+}
+.logo-nav .cart {
+    background-color: #14c0c9;
+    color: white;
+}
+
+/* logo nav end */
+
+/* main nav */
+
+.main-nav ul {
+    padding-left: 0;
+    margin: 24px 0;
+}
+.main-nav li {
+    padding-right: 20px;
+    display: inline;
+}
+.main-nav a {
+    color: #40423b;
+}
+.main-nav a:hover {
+    color: #0abecf;
+    text-decoration: none;
+}
+.main-nav form {
+    text-align: right;
+    margin-top: 20px;
+}
+.main-nav input {
+    height: 34px;
+    border: solid 1px #e0e0e0;
+}
+.main-nav button {
+    border: none;
+    height: 34px;
+    width: 34px;
+}
+.fa-search {
+    color: #8c8c8c;
+}
+/* nav bar end */
+
+/* carousel */
+
+.carousel-wrapper {
+    background-color: #d8d9d7;
+}
+.hero img {
+    padding-left: 200px;
+}
