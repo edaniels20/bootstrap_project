@@ -23,9 +23,9 @@
         <div class="top-nav row">
             <div class="col-sm-6">
                 <ul>
-                    <li><a href=""><i class="fas fa-edit"></i> My Wishlist</a></li>
-                    <li><a href=""><i class="fas fa-user-alt"></i> My Account</a></li>
-                    <li><a href=""><i class="fas fa-shopping-cart"></i> Shopping Cart</a></li>
+                    <li><i class="fas fa-edit"></i><a href="" class="hidden-xs"> My Wishlist</a></li>
+                    <li><i class="fas fa-user-alt"></i><a href=""> My Account</a></li>
+                    <li><i class="fas fa-shopping-cart"></i><a href=""> Shopping Cart</a></li>
                     <li><a href=""><i class="fas fa-check"></i> Checkout</a></li>
                 </ul>
             </div>
@@ -90,6 +90,18 @@
             <div class="carousel-inner">
                 <div class="item active">
                     <img src="img/hero1.png" alt="First Slide">
+                    <div class="car-inner carousel-caption">
+                        <h1>NEW</h1>
+                        <div class="clearfix">
+                            
+                        </div>
+                        <h2>Men Collection</h2>
+                        <div class="clearfix">
+                            
+                        </div>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, totam? Maiores dignissimos porro corporis sed voluptatem. Molestias, sunt, unde ducimus facilis eius cumque quasi veniam in velit laborum omnis fugit.</p>
+                        <a href="#">SHOP NOW</a>
+                    </div>
                 </div>
                 <div class="item">
                     <img src="img/hero2.png" alt="Second Slide">
@@ -115,18 +127,31 @@
 
 <div class="container">
     <div class="row">
-        <div class="col-sm-4">
-            <h2>Free</h2>
-            <h3>Shipping</h3>
-            <p>on orders over</p>
-            <h3>$150</h3>
+        <div class="free-shipping col-sm-4">
+            <div class="free-shipping-inner">
+                <img src="img/truck.png" alt="">
+                <div class="free-shipping-text">
+                    <h2>FREE</h2>
+                    <h3>SHIPPING</h3>
+                    <span>on orders over</span>
+                    <h4>$150</h4>
+                </div>
+            </div>
         </div>
         <div class="col-sm-4">
-            <h2>SALE</h2>
-            <p>MANY ITEMS</p>
+            <div class="sale">
+                <h2><strong>SALE</strong></h2>
+                <span>MANY ITEMS</span>
+            </div>
         </div>
         <div class="col-sm-4">
-            <h2>NEW ARRIVALS</h2>
+            <div class="new-arrivals">
+                <img src="img/shoe-image.png" alt="">
+                <div class="text-wrapper">
+                    <h2><strong>NEW</strong></h2>
+                    <h2><strong>ARRIVALS</strong></h2>
+                </div>
+            </div>
         </div>
     </div>
 </div>
@@ -137,14 +162,13 @@
 
 <div class="container">
     <div class="latest row">
-        <div class="col-sm-4">
+        <div class="col-sm-8">
             <h2>Latest</h2>
-            <hr>
             <p>Buy discounted items from the latest collections of world brands.</p>
         </div>
         <div class="col-sm-4">
-            <a href="#">&lt;</a>
-            <a href="#">&gt;</a>
+            <a href="#" class="scroll-img">&gt;</a>
+            <a href="#" class="scroll-img">&lt;</a>
         </div>
     </div>
 </div>
@@ -155,32 +179,36 @@
 
     <!-- Discounted items -->
 <div class="container">
-    <div class="row">
+    <div class="discount-items row">
         <div class="col-sm-3">
-            <img src="http://www.placehold.it/100x100" alt="discount">
-            <p>-45%</p>
-            <p>$40</p>
-            <h2>Jewelry Bracelet Cara Accessories</h2>
-            <a href="#">ADD TO CART</a>
+            <img src="img/bracelet.jpg" alt="discount">
         </div>
         <div class="col-sm-3">
-            <img src="http://www.placehold.it/100x100" alt="discount">
-            <p>$435</p>
-            <h2>Jessica London Short Trench Coat</h2>
-            <a href="#">ADD TO CART</a>
+            <img src="img/jacket.jpg" alt="discount">
         </div>
         <div class="col-sm-3">
-            <img src="http://www.placehold.it/100x100" alt="discount">
-            <p>-30%</p>
-            <p>$19</p>
-            <h2>Mocca Stretch Leather Gloves</h2>
-            <a href="#">ADD TO CART</a>
+            <img src="img/gloves.jpg" alt="discount">
         </div>
         <div class="col-sm-3">
-            <img src="http://www.placehold.it/100x100" alt="discount">
-            <p>$19</p>
+            <img src="img/sweater.jpg" alt="discount">
+        </div>
+    </div>
+    <div class="cart-footers row">
+        <div class="col-sm-3">
             <h2>limited Edithin Knitted Sweater</h2>
-            <a href="#">ADD TO CART</a>
+            <a href="#" class="add-to-cart">ADD TO CART</a>
+        </div>
+        <div class="col-sm-3">
+            <h2>Mocca Stretch Leather Gloves</h2>
+            <a href="#" class="add-to-cart">ADD TO CART</a>
+        </div>
+        <div class="col-sm-3">
+            <h2>Jessica London Short Trench Coat</h2>
+            <a href="#" class="add-to-cart">ADD TO CART</a>
+        </div>
+        <div class="col-sm-3">
+            <h2>Jewelry Bracelet Cara Accessories</h2>
+            <a href="#" class="add-to-cart">ADD TO CART</a>
         </div>
     </div>
 </div>
@@ -189,15 +217,15 @@
 
     <!-- About section -->
 <div class="container">
-    <div class="row">
-        <div class="col-sm-8">
+    <div class="latest row">
+        <div class="col-sm-6">
             <h2>Welcome to Venedor</h2>
-            <p>Venedor is fa fully responsive PSD theme designed for all types of platforms WooCOmmerce, Magento, OpenCarts, PrestaShop and other. Based on Bootstrap's 12 column 1200px responsive grid Template. Great looks on desktops, tablets and mobiles</p>
-            <p>Sed interdum magna sit amet orci tratique blandit. Etiam id justo consequot quam viverra elemtum. Sed ac magna sed massa rhocus elementum et ac augue. Morbi non tellus nisi. Pellentesque baitant morbi transique senectus. Vestibulum rutrum egestas mattis. Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>
+            <p> Venedor is fa fully responsive PSD theme designed for all types of platforms WooCOmmerce, Magento, OpenCarts, PrestaShop and other. Based on Bootstrap's 12 column 1200px responsive grid Template. Great looks on desktops, tablets and mobiles</p>
+            <p> Sed interdum magna sit amet orci tratique blandit. Etiam id justo consequot quam viverra elemtum. Sed ac magna sed massa rhocus elementum et ac augue. Morbi non tellus nisi. Pellentesque baitant morbi transique senectus. Vestibulum rutrum egestas mattis. Lorem ipsum dolor sit amet, consecteur adipiscing elit.</p>
             <a href="#">Buy Venedor Theme</a>
         </div>
-        <div class="col-sm-4">
-            <img src="http://www.placehold.it/400x300" alt="about image">
+        <div class="col-sm-6">
+            <img src="img/responsive.jpg" alt="about image" class="img-responsive">
         </div>
     </div>
 </div>
@@ -206,67 +234,71 @@
 
     <!-- Bestsellers -->
 <div class="container">
-    <div class="row">
+    <div class="latest row">
         <div class="col-sm-8">
             <h2>Bestsellers</h2>
             <p>Special offers and biggest discounts for the most popular products</p>
         </div>
         <div class="col-sm-4">
-            <a href="#">&lt;</a>
-            <a href="#">&gt;</a>
+            <a href="#" class="scroll-img">&gt;</a>
+            <a href="#" class="scroll-img">&lt;</a>
         </div>
     </div>
-    <div class="row">
-            <div class="col-sm-3">
-                <img src="http://www.placehold.it/100x100" alt="discount">
-                <p>-45%</p>
-                <p>$40</p>
-                <h2>Jewelry Bracelet Cara Accessories</h2>
-                <a href="#">ADD TO CART</a>
-            </div>
-            <div class="col-sm-3">
-                <img src="http://www.placehold.it/100x100" alt="discount">
-                <p>$435</p>
-                <h2>Jessica London Short Trench Coat</h2>
-                <a href="#">ADD TO CART</a>
-            </div>
-            <div class="col-sm-3">
-                <img src="http://www.placehold.it/100x100" alt="discount">
-                <p>-30%</p>
-                <p>$19</p>
-                <h2>Mocca Stretch Leather Gloves</h2>
-                <a href="#">ADD TO CART</a>
-            </div>
-            <div class="col-sm-3">
-                <img src="http://www.placehold.it/100x100" alt="discount">
-                <p>$19</p>
-                <h2>limited Edithin Knitted Sweater</h2>
-                <a href="#">ADD TO CART</a>
-            </div>
+    <div class="discount-items row">
+        <div class="col-sm-3">
+            <img src="img/heel.jpg" alt="discount">
         </div>
+        <div class="col-sm-3">
+            <img src="img/bag.jpg" alt="discount">
+        </div>
+        <div class="col-sm-3">
+            <img src="img/blue-shoes.jpg" alt="discount">
+        </div>
+        <div class="col-sm-3">
+            <img src="img/white-jacket.jpg" alt="discount">
+        </div>
+    </div>
+    <div class="cart-footers row">
+        <div class="col-sm-3">
+            <h2>Jewelry Bracelet Cara Accessories</h2>
+            <a href="#" class="add-to-cart">ADD TO CART</a>
+        </div>
+        <div class="col-sm-3">
+            <h2>Jessica London Short Trench Coat</h2>
+            <a href="#" class="add-to-cart">ADD TO CART</a>
+        </div>
+        <div class="col-sm-3">
+            <h2>Mocca Stretch Leather Gloves</h2>
+            <a href="#" class="add-to-cart">ADD TO CART</a>
+        </div>
+        <div class="col-sm-3">
+            <h2>limited Edithin Knitted Sweater</h2>
+            <a href="#" class="add-to-cart">ADD TO CART</a>
+        </div>
+    </div>
 </div>
 
     <!-- Bestsellers end -->
 
     <!-- Manufacturers -->
 <div class="container">
-    <div class="row">
+    <div class="latest row">
         <div class="col-sm-8">
             <h2>Manufacturers</h2>
         </div>
         <div class="col-sm-4">
-            <a href="#">&lt;</a>
-            <a href="#">&gt;</a>
+            <a href="#" class="scroll-img">&gt;</a>
+            <a href="#" class="scroll-img">&lt;</a>
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-12">
-            <img src="http://www.placehold.it/75x50" alt="">
-            <img src="http://www.placehold.it/75x50" alt="">
-            <img src="http://www.placehold.it/75x50" alt="">
-            <img src="http://www.placehold.it/75x50" alt="">
-            <img src="http://www.placehold.it/75x50" alt="">
-            <img src="http://www.placehold.it/75x50" alt="">
+        <div class="brand-logo col-sm-12">
+            <img src="img/brand-logo.jpg" alt="">
+            <img src="img/brand-logo.jpg" alt="">
+            <img src="img/brand-logo.jpg" alt="">
+            <img src="img/brand-logo.jpg" alt="">
+            <img src="img/brand-logo.jpg" alt="">
+            <img src="img/brand-logo.jpg" alt="">
         </div>
     </div>
 </div>
@@ -274,16 +306,18 @@
     <!-- Manufacturers end -->
 
     <!-- Signup form -->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-8">
-            <h2>SIGN UP TO RECEIVE THE LATEST FASHION NEWS</h2>
-        </div>
-        <div class="col-sm-4">
-            <form action="signup">
-                <input type="text" placeholder="Search here...">
-                <a href="#">SIGN UP</a>
-            </form>
+<div class="signup-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>SIGN UP TO RECEIVE THE LATEST FASHION NEWS</h2>
+            </div>
+            <div class="col-sm-6">
+                <form action="signup">
+                    <input type="text" placeholder="Enter your email address">
+                    <a href="#" class="add-to-cart">SIGN UP</a>
+                </form>
+            </div>
         </div>
     </div>
 </div>
@@ -292,73 +326,75 @@
     <!-- Signup form end -->
 
     <!-- Bottom nav -->
-<div class="container">
-    <div class="row">
-        <div class="col-sm-3">
-            <h2>MY ACCOUNT</h2>
-            <ul>
-                <li><a href="#">My account</a></li>
-                <li><a href="#">Personal informatino</a></li>
-                <li><a href="#">Addresses</a></li>
-                <li><a href="#">Discount</a></li>
-                <li><a href="#">Orders history</a></li>
-                <li><a href="#">Your Vouchers</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-3">
-            <h2>Information</h2>
-            <ul>
-                <li><a href="#">New Products</a></li>
-                <li><a href="#">Top sellers</a></li>
-                <li><a href="#">Specials</a></li>
-                <li><a href="#">Manufacturers</a></li>
-                <li><a href="#">Suppliers</a></li>
-                <li><a href="#">Our stores</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-3">
-            <h2>FROM TWITTER</h2>
-            <ul>
-                <li>
-                    <p>Donec et tortor orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultries posuere cubilia Curae. <a href="#">http.//t.co/MqacjST476</a></p>
-                    <p>about 1 hour ago</p>
-                </li>
-                <li>
-                    <p>Aliquam aliquam fermentum arcu. Sed et magna dolor, eu fermenum enim. Aliquam <a href="#">http://t.co/CCkfps248sq</a> consecteur ligula</p>
-                    <p>about 3 hours ago</p>
-                </li>
-            </ul>
-        </div>
-        <div class="col-sm-3">
-            <h2>FACEBOOK</h2>
-
-            <h3>1452 people like <a href="#">Promokit</a></h3>
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="http://www.placehold.it/40x40" alt="facebook">
-                    <p>Anna</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="http://www.placehold.it/40x40" alt="facebook">
-                    <p>Tom</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="http://www.placehold.it/40x40" alt="facebook">
-                    <p>Antuan</p>
-                </div>
+<div class="bottom-nav-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                <h2>MY ACCOUNT</h2>
+                <ul>
+                    <li><a href="#">My account</a></li>
+                    <li><a href="#">Personal informatino</a></li>
+                    <li><a href="#">Addresses</a></li>
+                    <li><a href="#">Discount</a></li>
+                    <li><a href="#">Orders history</a></li>
+                    <li><a href="#">Your Vouchers</a></li>
+                </ul>
             </div>
-            <div class="row">
-                <div class="col-sm-4">
-                    <img src="http://www.placehold.it/40x40" alt="facebook">
-                    <p>Milla</p>
+            <div class="col-sm-3">
+                <h2>INFORMATION</h2>
+                <ul>
+                    <li><a href="#">New Products</a></li>
+                    <li><a href="#">Top sellers</a></li>
+                    <li><a href="#">Specials</a></li>
+                    <li><a href="#">Manufacturers</a></li>
+                    <li><a href="#">Suppliers</a></li>
+                    <li><a href="#">Our stores</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h2>FROM TWITTER</h2>
+                <ul>
+                    <li>
+                        <p>Donec et tortor orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultries posuere cubilia Curae. <a href="#" class="primary-color">http.//t.co/MqacjST476</a></p>
+                        <p class="lighter">about 1 hour ago</p>
+                    </li>
+                    <li>
+                        <p>Aliquam aliquam fermentum arcu. Sed et magna dolor, eu fermenum enim. Aliquam <a href="#" class="primary-color">http://t.co/CCkfps248sq</a> consecteur ligula</p>
+                        <p class="lighter">about 3 hours ago</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-3">
+                <h2>FACEBOOK</h2>
+    
+                <h3>1452 people like <a href="#" class="primary-color">Promokit</a></h3>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="img/anna.jpg" alt="facebook">
+                        <p>Anna</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="img/tom.jpg" alt="facebook">
+                        <p>Tom</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="img/antuan.jpg" alt="facebook">
+                        <p>Antuan</p>
+                    </div>
                 </div>
-                <div class="col-sm-4">
-                    <img src="http://www.placehold.it/40x40" alt="facebook">
-                    <p>Justine</p>
-                </div>
-                <div class="col-sm-4">
-                    <img src="http://www.placehold.it/40x40" alt="facebook">
-                    <p>Maria</p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img src="img/milla.jpg" alt="facebook">
+                        <p>Milla</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="img/justine.jpg" alt="facebook">
+                        <p>Justine</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="img/maria.jpg" alt="facebook">
+                        <p>Maria</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -368,23 +404,24 @@
     <!-- Bottom nav end -->
 
     <!-- Footer -->
-
-<div class="container">
-    <div class="row">
-        <div class="col-sm-6">
-            <ul>
-                <li><a href="#">f</a></li>
-                <li><a href="#">f</a></li>
-                <li><a href="#">f</a></li>
-                <li><a href="#">f</a></li>
-                <li><a href="#">f</a></li>
-                <li><a href="#">f</a></li>
-                <li><a href="#">f</a></li>
-                <li><a href="#">f</a></li>
-            </ul>
-        </div>
-        <div class="col-sm-6">
-            <span><a href=""> &copy; Powered by WooCommerce&trade;. All Rights Reserved</a></span>
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <ul>
+                    <li><a href="#" class="facebook-square"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fas fa-podcast"></i></a></li>
+                    <li><a href="#"><i class="fas fa-headset"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                    <li><a href="#"><i class="fab fa-discord"></i></a></li>
+                    <li><a href="#"><i class="fab fa-skype"></i></a></li>
+                    <li><a href="#"><i class="far fa-envelope"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-sm-6">
+                <span><a href=""> &copy; Powered by WooCommerce&trade;. All Rights Reserved</a></span>
+            </div>
         </div>
     </div>
 </div>
